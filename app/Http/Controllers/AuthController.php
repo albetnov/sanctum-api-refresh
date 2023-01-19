@@ -22,7 +22,7 @@ class AuthController extends Controller
             ], 403);
         };
 
-        $token = $user->createToken('web');
+        $token = $user->createToken('web', ['*'], now()->addMinute(config('sanctum.expiration')));
 
         return response()->json([
             'message' => 'Authenticated successfully!',

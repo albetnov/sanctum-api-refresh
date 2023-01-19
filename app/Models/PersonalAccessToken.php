@@ -22,7 +22,6 @@ class PersonalAccessToken extends \Laravel\Sanctum\PersonalAccessToken
         // add refresh token
         static::creating(function ($item) {
             $item->refresh_token = Crypt::encryptString(Str::random(40));
-            $item->expires_at = now()->addMinute(config('sanctum.expiration'));
         });
     }
 
