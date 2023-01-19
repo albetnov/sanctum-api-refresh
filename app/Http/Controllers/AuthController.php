@@ -43,7 +43,7 @@ class AuthController extends Controller
         ]);
     }
 
-    public function refresh(Request $request)
+    public function refresh(Request $request): JsonResponse
     {
         // Get the refresh token from cookie
         $refreshToken = $request->hasCookie('refresh_token') ?
