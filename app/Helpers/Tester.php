@@ -14,9 +14,9 @@ class Tester
     public static function createTokenFrom(Tokens $token): string
     {
         return match ($token) {
-            Tokens::FIRST_TOKEN => "1:" . Tokens::FIRST_TOKEN->value,
-            Tokens::SECOND_TOKEN => "2:" . Tokens::SECOND_TOKEN->value,
-            Tokens::THIRD_TOKEN => "3:" . Tokens::THIRD_TOKEN->value,
+            Tokens::FIRST_TOKEN => "1|" . Tokens::FIRST_TOKEN->value,
+            Tokens::SECOND_TOKEN => "2|" . Tokens::SECOND_TOKEN->value,
+            Tokens::THIRD_TOKEN => "3|" . Tokens::THIRD_TOKEN->value,
         };
     }
 

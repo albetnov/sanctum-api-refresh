@@ -1,7 +1,5 @@
 # Sanctum API Refresh
 
-> WARNING: This project is only tested using Postman Yet. The feature tests is coming soon.
-
 Often we need to make a refresh token for an API. Under the hood, 
 Sanctum does not provide this. Instead, they provide Stateful Authentication for
 Frontends. This can be a pain if the front end is not in the same domain.
@@ -25,3 +23,10 @@ if existed, else the app will look for request body.
 # Installation
 
 Clone this repository: `git clone https://github.com/albetnov/sanctum-api-refresh.git`. Then, simply run `composer install`
+
+# Testing
+
+Simply run
+```bash
+composer test
+```

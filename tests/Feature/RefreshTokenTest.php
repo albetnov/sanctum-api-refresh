@@ -3,7 +3,6 @@
 namespace Tests\Feature;
 
 use App\Helpers\Tester;
-use App\Helpers\Tokens;
 use Database\Seeders\TokenSeeder;
 use Database\Seeders\UserSeeder;
 use Illuminate\Foundation\Testing\RefreshDatabase;
